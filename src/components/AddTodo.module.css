@@ -1,0 +1,12 @@
+.todo_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.todo_header {}
+.todo_btn {
+    width: 120px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto;
+}
