@@ -2,6 +2,7 @@ import { useTodos } from "../context/useTodo";
 import styles from "./List-Item.module.css"
 
 function TodoItem ({ todo }) {
+    // The component does not store state, but calls Context functions with the task id.
     const { toggleTodo, removeTodo } = useTodos();
 
     if (!todo) return null;

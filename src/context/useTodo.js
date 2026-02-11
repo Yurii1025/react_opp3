@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { TodoContext } from "./TodoContext";
 
-//The custom hook encapsulates work with Context and ensures that it is only used within Provider.
+//GPT said that - A custom hook encapsulates work with Context and ensures that it is used only within the Provider.🙂
 
 export function useTodos () {
     const context = useContext(TodoContext);

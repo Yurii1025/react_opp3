@@ -3,6 +3,8 @@ import { useTodos } from "../context/useTodo";
 import styles from "./AddTodo.module.css"
 
 function AddTodo () {
+    // Local state is used only for input.
+    // Global todo state is stored in Context.
     const [text, setText] = useState("");
     const { addTodo } = useTodos();
 
