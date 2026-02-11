@@ -1,4 +1,5 @@
 import { useTodos } from "../context/useTodo";
+import styles from "./List-Item.module.css"
 
 function TodoItem ({ todo }) {
     const { toggleTodo, removeTodo } = useTodos();
@@ -6,24 +7,27 @@ function TodoItem ({ todo }) {
     if (!todo) return null;
 
     return (
-        <li>
-            <input 
-                type="checkbox"
-                checked={Boolean(todo.done)}
-                onChange={() => toggleTodo(todo.id)}
-            />
+        <li className={styles.li_container}>
+            <div className={styles.chk_span}>
+                <input className={styles.chk}
+                    type="checkbox"
+                    checked={Boolean(todo.done)}
+                    onChange={() => toggleTodo(todo.id)}
+                />
 
-            <span
-                style={{
+                <span
+                    style={{
                     textDecoration: todo.done
                     ? "line-through"
                     : "none",
-                }}
-            >
-                {todo.text}
-            </span>
+                    }}
+                >
+                    {todo.text}
+                </span>
+            </div>
+            
 
-            <button onClick={() => removeTodo(todo.id)}>
+            <button className={styles.del_btn} onClick={() => removeTodo(todo.id)}>
                 x
             </button>
         </li>

@@ -49,18 +49,18 @@ button, input {
   --bg: #ffffff;
   --text: #111111;
   --border: #cccccc;
-  --todo-bg: #f5f5f5;
-  --span: #2ec600;
-  --but_bg: #ff080850;
-  --but_hover: #1eff0089;
+  --todo-bg: #fffaa5;
+  --span: #b1ab00;
+  --but_bg: #25ff0882;
+  --but_hover: #00ffea89;
 }
 .app.dark {
   --bg: #121212;
   --text: #f5f5f5;
-  --border: #444444;
-  --todo-bg: #1e1e1e;
-  --span: #c60000;
-  --but_bg: #082dff50;
+  --border: #00e1ff;
+  --todo-bg: #002a35c9;
+  --span: #d000ff;
+  --but_bg: #359dffab;
   --but_hover: #fff70089;
 }
 
@@ -86,14 +86,25 @@ li {
 }
 
 button {
-  background: transparent;
-  
+  border: 1px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+  /* display: block; */
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: var(--but_bg);
+  transition: background-color 0.6s;
+}
+button:hover {
+  background-color: var(--but_hover);
 }
 button:disabled {
-  background-color: var(--border);
+  background-color: #c0c0c0;
   color: #888;
   cursor: not-allowed;
-  transition: opacity 0.2s, background-color 0.2s;
+  transition: background-color 0.2s;
 }
 /* button:not(:disabled):hover {
   background-color: var(--border);

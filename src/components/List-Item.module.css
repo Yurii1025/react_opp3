@@ -1,0 +1,43 @@
+.ul_container {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #00546b;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #00ffd0;
+}
+
+.li_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+.chk_span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /*words wrapping*/
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+    word-break: break-word;
+    line-height: 1.5;
+}
+.chk{
+    height: 20px;
+    min-width: 20px;
+}
+.del_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    margin: 0 0 0 10px;
+}

@@ -1,5 +1,6 @@
 import { useTodos } from "../context/useTodo";
 import TodoItem from "./TodoItem";
+import styles from "./List-Item.module.css"
 
 function TodoList() {
     const { todos } = useTodos();
@@ -9,7 +10,7 @@ function TodoList() {
     }
 
     return (
-        <ul>
+        <ul className={styles.ul_container}>
             {todos.map((todo) => (
                 <TodoItem key={todo.id} todo={todo}/>
             ))}

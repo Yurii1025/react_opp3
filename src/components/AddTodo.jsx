@@ -17,7 +17,7 @@ function AddTodo () {
     return (
         <div className={styles.todo_container}>
             <h2 className={styles.todo_header}>TodoList</h2>
-            <input
+            <input className={styles.input}
                 value={text}
                 onChange={(e) => setText(e.target.value)}
             />

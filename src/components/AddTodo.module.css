@@ -3,10 +3,20 @@
     flex-direction: column;
     margin-top: 40px;
 }
-.todo_header {}
+.todo_header {
+    font-size: 30px;
+    font-weight: 700;
+}
 .todo_btn {
     width: 120px;
     padding: 10px 20px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
+}
+.input {
+    height: 30px;
+    border-radius: 5px;
+    width: 500px;
+    margin: 30px auto;
+    border: 1px solid #00fffb;
 }
