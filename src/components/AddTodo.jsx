@@ -9,10 +9,14 @@ function AddTodo () {
     const { addTodo } = useTodos();
 
     const handleAdd = () => {
+        // trim() — removes spaces from the beginning and end of a string.
         const trimmed = text.trim();
+        // If the string is empty (""), the function stops.
         if (!trimmed) return;
 
+        // addTodo we get from the context.
         addTodo(trimmed);
+        // After adding, we clear the input and make the input field empty.
         setText("")
     };
 
